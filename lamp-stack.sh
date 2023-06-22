@@ -56,6 +56,7 @@ sudo pacman -S phpmyadmin
 #phpmyadmin config
 sudo sed -i '917c extension=bz2' /etc/php/php.ini
 sudo sed -i '931c extension=mysqli' /etc/php/php.ini
+sudo sed -i '935c extension=pdo_mysql' /etc/php/php.ini
 
 sudo chmod +w /etc/httpd/conf/extra/phpmyadmin.conf
 
